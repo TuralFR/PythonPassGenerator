@@ -17,17 +17,17 @@ banner = """
 """
 print(banner)
 
-karakter = 'abcdefghijklmnopqrstuvwyz123456789ABCDEFGHIJKLMNOPQRSTUYZ'
+character = 'abcdefghijklmnopqrstuvwyz123456789ABCDEFGHIJKLMNOPQRSTUYZ'
 
-numara = input('>>>OLUSTURMAK ISTEDIGINIZ PAROLA SAYISI : ')
-int(numara)
-uzunluk = input('>>>PAROLA UZUNLUGUNU GIRINIZ : ')
-int(uzunluk)
+number = input('>>>THE NUMBER OF PASSWORDS YOU WANT TO CREATE : ')
+int(number)
+length = input('>>>ENTER PASSWORD LENGTH : ')
+int(length)
 
-for password in range(int(numara)):
-    parola = ''
-    for char in range(int(uzunluk)):
+for password in range(int(number)):
+    password = ''
+    for char in range(int(length)):
 
-        parola += random.choice(karakter)
-    print(">>>PAROLANIZ: {}".format(parola))
+        password += random.choice(character)
+    print(">>>PASSWORD: {}".format(password))
 
